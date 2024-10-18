@@ -1,0 +1,189 @@
+@font-face {
+    font-family: outfit-f;
+    src: url(/assets/fonts/Outfit-Bold.ttf);
+}
+@font-face {
+    font-family: raleway-f;
+    src: url(/assets/fonts/Raleway-Bold.ttf);
+}                                                                           
+:root{
+    --h-fonts: outfit-f;
+    --p-fonts: raleway-f;
+    --color-one: #202020;
+    --color-two: #1abc05;
+}
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 10px #1abc05;
+        transform: translateY(0);
+    }
+    50% {
+        box-shadow: 0 0 20px #148c04;
+        transform: translateY(-6px);
+    }
+    100% {
+        box-shadow: 0 0 10px #1abc05;
+        transform: translateY(0);
+    }
+}
+@keyframes show-text {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(-400px);
+    }
+}
+@keyframes unshow-text {
+    0%{
+        transform: translateX(-400px);
+    }
+    50%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--h-fonts);
+}
+p, input, button{
+    font-family: var(--p-fonts)
+}
+a{
+    color: white;
+    font-style: none;
+    font-family: var(--p-fonts);
+}
+.textM{
+    position: relative;
+    top: 60px;
+}
+.text_card{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    left: 800px;
+    top: 200px;
+    transition: 0.5s;
+    animation: pulse-shadow 2s infinite;
+    color: white;
+}
+#txtCardForLV{
+    display: none;
+}
+#txtCardForNA{
+    display: none;
+}
+#txtCardForAW{
+    display: none;
+}
+body{
+    background-color: var(--color-one);
+}
+.trakshead{
+    display: flex;
+}
+.play{
+    background-color: white;
+    border: none;
+    width: 100px;
+    position: relative;
+    left: 30px;
+    height: 100px;
+}
+.icon{
+    width: 90px;
+    height: 90px;
+}
+.card{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    top: 200px;
+    left: 800px;
+    animation: pulse-shadow 2s infinite;
+    color: white;
+}
+#LoversRockC{
+    display: none;
+}
+#NotAllowedC{
+    display: none;
+}
+#AlmostWorkedC{
+    display: none;
+}
+#play, .play{
+    background-color: var(--color-one);
+}
+.logo{
+    border-radius: 8px 8px 0px 0px;
+    width: 300px;
+    height: 300px;
+}
+.head{
+    background-color: var(--color-two);
+    width: 100%;
+    height: 50px;
+    border: 1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#searchIn{
+    height: 24px;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+
+}
+#searchBtn{
+    position: relative;
+    top: 4px;
+}
+.txtshowbtn{
+    position: relative;
+    bottom: 423px;
+    right:  155px;
+    border-radius: 8px;
+    width: 50px;
+    height: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.download{
+    position: relative;
+    bottom: 400px;
+    text-decoration: none;
+    right:  195px;
+    font-size: 10px;
+    border-radius: 8px;
+    width: 50px;
+    height: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+}
